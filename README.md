@@ -33,3 +33,15 @@ Example:
 
 - branch `v1.0`
 - directory `2.4-alpine`
+
+## Automated Build configurations
+
+- SOURCE REPOSITORY : `kofuseigetsu/docker-httpd-sshd`
+- AUTOTEST : `Off`
+- REPOSITORY LINKS : `Off`
+- BUILD RULES :  
+  | Source Type | Source | Docker Tag | Dockerfile location | Build Context | Autobuild | Build Caching |
+  | -------| -------------- | --------------- | ---------- | ----------- | --- | --- |
+  | Branch | main           | 2.4-alpine      | Dockerfile | /2.4-alpine | Yes | No  |
+  | Branch | /^(v[0-9.]+)$/ | 2.4-alpine-{\1} | Dockerfile | /2.4-alpine | Yes | No  |
+  
