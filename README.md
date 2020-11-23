@@ -17,6 +17,11 @@ docker run -d --rm --name httpd-sshd -p 8000:80 -p 2222:2222 seigetsu/httpd-sshd
 - `:<baseimage-tag>` : latest version of this image based on the image of `httpd:<baseimage-tag>`.
 - `:<baseimage-tag>-<version>` : Specific version of this image based on the image of `httpd:<baseimage-tag>`.
 
+## Environment Variables
+
+- `ROOT_PASSWORD` : password for root user of SSH.
+- `SSH_PORT` : Port of SSH. Default `2222`
+
 ## Relationship between Source code and Docker image tag
 
 - `<baseimage-tag>` : see directory.
