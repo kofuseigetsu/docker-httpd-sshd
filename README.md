@@ -2,7 +2,7 @@
 
 This is the httpd image with opnessh-server installed.
 
-Use this image for services that require ssh for maintenance, such as Azure App Service (Web App for Containers) on Linux.
+Use this image for services that require ssh for maintenance, such as Azure App Service on Linux (Web App for Containers).
 
 Please be careful about security when using it in an open network.
 
@@ -34,7 +34,11 @@ Example:
 - branch `v1.0`
 - directory `2.4-alpine`
 
-## Automated Build configurations
+## Image Repository
+
+https://hub.docker.com/r/seigetsu/httpd-sshd
+
+## Automated Build configurations on Docker Hub
 
 - SOURCE REPOSITORY : `kofuseigetsu/docker-httpd-sshd`
 - AUTOTEST : `Off`
